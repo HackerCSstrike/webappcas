@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Казино - Баскетбол</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏀 Баскетбол</h1>
+            <div class="balance">
+                <span>Баланс: </span>
+                <span id="balance">0.00</span> <span>USDT</span>
+            </div>
+        </div>
+
+        <div class="game-section">
+            <div class="bet-input-section">
+                <label for="betAmount">Ставка (USDT):</label>
+                <input type="number" id="betAmount" min="0.01" step="0.01" placeholder="0.00">
+                <div class="quick-bets">
+                    <button class="quick-bet" data-amount="1">1</button>
+                    <button class="quick-bet" data-amount="5">5</button>
+                    <button class="quick-bet" data-amount="10">10</button>
+                    <button class="quick-bet" data-amount="50">50</button>
+                </div>
+            </div>
+
+            <div class="coefficients">
+                <div class="coef-item">
+                    <span>🏀 Гол</span>
+                    <span class="coef-value">x1.8</span>
+                </div>
+                <div class="coef-item">
+                    <span>❌ Мимо</span>
+                    <span class="coef-value">x0</span>
+                </div>
+            </div>
+
+            <div class="game-area">
+                <div id="basketballGame" class="basketball-container">
+                    <p class="game-instruction">Нажмите кнопку ниже, чтобы запустить игру</p>
+                </div>
+            </div>
+
+            <button id="playButton" class="play-button">🎮 Играть</button>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

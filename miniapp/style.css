@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #ffffff;
+    color: #000000;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.balance {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.game-section {
+    background: #f8f9fa;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.bet-input-section {
+    margin-bottom: 25px;
+}
+
+.bet-input-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.bet-input-section input {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bet-input-section input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+.quick-bets {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.quick-bet {
+    padding: 8px 16px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.quick-bet:hover {
+    background: #5568d3;
+    transform: translateY(-2px);
+}
+
+.quick-bet:active {
+    transform: translateY(0);
+}
+
+.coefficients {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+}
+
+.coef-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.coef-item span:first-child {
+    font-size: 16px;
+}
+
+.coef-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.game-area {
+    margin-bottom: 25px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.basketball-container {
+    text-align: center;
+}
+
+.game-instruction {
+    font-size: 16px;
+    color: #666;
+}
+
+.play-button {
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 15px;
+}
+
+.play-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.play-button:active {
+    transform: translateY(0);
+}
+
+.play-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.result {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result.win {
+    background: #d4edda;
+    color: #155724;
+}
+
+.result.lose {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.result.waiting {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.basketball-emoji {
+    font-size: 80px;
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
